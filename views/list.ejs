@@ -1,0 +1,49 @@
+<%- include("header"); -%>
+
+<div class="box" id="heading">
+  <h1><%= listTitle %></h1>
+</div>
+
+<!-- <div class="" id="" style="al">
+  <h1>Create Custom List</h1>
+  <div>
+  <form class="item" action="index.html" method="post">
+    <input type="text" name="" value="">
+    <button type="submit" name="button">+ Create</button>
+  </form>
+</div>
+  </div> -->
+
+
+
+<div class="box">
+  <% newListItems.forEach(function(newListItem) { %>
+  <form class="" action="/delete" method="post">
+
+
+    <div class="item">
+      <input type="checkbox" onChange="this.form.submit()" name="checkbox" value="<%= newListItem._id %>">
+      <p><%= newListItem.name %></p>
+    </div>
+    <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+  </form>
+  <% }); %>
+  <form class="item" action="/" method="post">
+    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+    <button class="btn" type="submit" name="list" value=<%= listTitle %>>+</button>
+  </form>
+</div>
+
+<%- include("footer"); -%>
+
+
+
+
+
+<!--   if (kindOfDay === "Sunday" || kindOfDay === "Saturday") {   this is a SCRIPLET tag. for control flow purposes
+      <h1 style="color: red">kindOfDay ToDo List.</h1>
+    } else {
+      <h1 style="color: green">kindOfDay ToDo List.</h1>
+    }  -->
+
+<!-- we have setup an ejs marker, inside is the key to the object we have created in app.js and once it's rendered it will get replace by its corresponding value. -->
