@@ -4,3 +4,4 @@
 
 #### For creating new To-Do lists, add a **/** after the original url and give it your own custom name.
 
+![Custom List](https://www.dropbox.com/s/jdosorj1cyahcbn/Screenshot%20%28215%29.png?dl=0)
